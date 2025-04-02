@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEP First Project</title>
+    <link rel="shortcut icon" href="images/Otumba.jpg" type="image/x-icon">
+</head>
+<body>
+    <marquee behavior="" direction="">This is a static page made with HTML only. </marquee><hr>
+    <div style="display: flex; gap: 3rem;">
+        <img src="images/Otumba.jpg" alt="Otumba" height="100 px" width="100 px">
+        <a href="index.html" style="padding-top: 15px;"><h1>Otumba</h1></a>
+        <nav style="padding-top: 45px; float: right;">
+            <a href="#s1">Section 1</a>
+            <a href="#s2">Section 2</a>
+            <a href="#s3">Section 3</a>
+        </nav>
+    </div>
+    <hr>
+    <h3>About me</h3>
+    <p>Hi there! I am Nwagboso Otumba, a beginner software engineer and aspiring fullstack developer.
+    </p>
+    <hr>
+    <h3 id="s1">My Interests</h3>
+    <p>Below are some pictures which describe some of my interests.</p>
+    <div style="display: flex; gap: 7rem;">
+        <div style="padding-left: 30px;">
+            <img src="images/nature.jpg" alt="geng" height="300" width="300">
+            <p>Photography</p>
+        </div>
+        <div>
+            <img src="images/nature1.jpg" alt="bond" height="300" width="300">
+            <p>Nature</p>
+        </div>
+        <div>
+            <img src="images/chess.jpg" alt="" height="300" width="300">
+            <p>Critical thinking and problem solving</p>
+        </div>
+    </div>
+    <center><button>Like</button></center>
+    <hr>
+    <h3 id="s2">Subscribe to our newsletter</h3>
+    <p>Register below to get informative emails from us, every week.</p>
+    <form action="" >
+        <input type="text" placeholder="Name:" style="margin-bottom: 10px;"><br>
+        <input type="email" placeholder="Email" style="margin-bottom: 10px;"><br>
+        <input type="number" placeholder="Phone number" style="margin-bottom: 10px;"><br>
+        <button type="submit">Sign up!</button>
+    </form>
+    <hr>
+    <footer id="s3">
+        <center><h3>Footer section</h3></center>
+        <center>
+            Otumba Ltd.
+        </center>
+        <center>
+            1 FFF Road, Off Alara Road, Onike, Yaba, Lagos
+        </center> 
+        <center>
+            <p>&copy Copyright Nwagboso Otumba 2025 </p>
+            <button id="backToTopBtn" title="Go to top">↑</button>
+        </center>
+
+    </footer>
+    <script>
+        const backToTopButton = document.getElementById("backToTopBtn");
+
+window.onscroll = function() {
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  
+  if (scrollPosition > 200) {
+    backToTopButton.style.opacity = "1";
+    backToTopButton.style.pointerEvents = "auto";
+  } else {
+    backToTopButton.style.opacity = "0";
+    backToTopButton.style.pointerEvents = "none";
+  }
+};
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+// Initial setup
+backToTopButton.style.transition = "opacity 0.3s";
+backToTopButton.style.opacity = "0";
+backToTopButton.style.pointerEvents = "none";
+    </script>
+</body>
+</html>
